@@ -1,4 +1,4 @@
-# SSAFY 8기 5반 알고리즘 스터이입니다
+# SSAFY 8기 5반 알고리즘 스터디입니다
 ## 작성 방법 링크
 [작성방법  notion page](https://dramatic-armchair-97f.notion.site/pull-request-fbde2b501e1e4c56a964a645d5eac483)
 
