@@ -18,14 +18,14 @@ public class BJ_1929_소수구하기 {
 		int N = Integer.parseInt(st.nextToken());
 		//입력 끝
 		
-		/*3번 방법.
-		 *  배수를 이용해서 소수인것들 찾기 */
+		//3번 방법.
+		//  배수를 이용해서 소수인것들 찾기
 		boolean [] checkPrime = new boolean[1000000];
 		checkPrime[0] = true;
 		checkPrime[1] = true;
 		//배수들을 true로 처리
 		for(int i = 2; i < N; i++) {
-			for(int j = 2; i*j < checkPrime.length; j++) {
+			for(int j = 2; i*j <= N; j++) {
 				checkPrime[i*j] = true;
 			}
 		}
@@ -77,8 +77,9 @@ public class BJ_1929_소수구하기 {
 		2. 다른 방법으로 소수인지 검사 
 		   소수들로 나눠보면 소수인지 아닌지 판별 가능		
 		*/		
-		/*
+		
 		//   소수를 담는 배열을 생성
+		/*
 		int [] primeNum = new int[N-M];
 
 		//소수인 경우에만 출력할 수 있도록 하기 위한 변수
@@ -116,9 +117,11 @@ public class BJ_1929_소수구하기 {
 		while(primeNum[i] != 0) {
 			sb.append(primeNum[i++] + "\n");
 		}
+		*/
+		
 		
 		System.out.print(sb);
-		*/
+		
 
 		
 	}
