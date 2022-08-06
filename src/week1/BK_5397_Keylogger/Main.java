@@ -49,10 +49,7 @@ public class Main {
                 out.add(curser++,l);						// - , < , > 가 아니면 저장
 //                System.out.println("입력 :" + l + " 커서 값 : " + curser);
             }
-            // 커서의 위치가 마지막이 아니면 커서포함 오른쪽에 문자들은 1칸씩 밀린다고 하여 공백( ) 삽입
-            if(curser != out.size()) {
-                out.add(curser,' ');
-            }
+
             // 완성된 암호를 저장
             for(char c : out) {
                 sb.append(c);
@@ -60,6 +57,6 @@ public class Main {
             sb.append("\n"); // 개행
         }
         // 일괄 출력
-        System.out.println(sb);
+        System.out.print(sb);
     }
 }
