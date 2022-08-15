@@ -11,7 +11,7 @@ import java.util.StringTokenizer;
  */
 public class Main {
     static int n;
-    static int max = 0;
+    static int result;
     static int[][] roomList;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -32,7 +32,7 @@ public class Main {
             return Integer.compare(o1[1], o2[1]);
         });
         find(0, 0, 0);
-        System.out.println(max);
+        System.out.println(result);
     }
 
     /**
@@ -42,7 +42,7 @@ public class Main {
      * @param index 루프를 돌때 전부를 도는게 아니라 기준 회의의 다음 회의부터 돌게 함
      */
     static void find(int curTime, int count, int index) {
-        max = Math.max(count, max);
+        result = count;
         for (int i = index; i < n; i++) {
             if (curTime <= roomList[i][0]) {
                 find(roomList[i][1], ++count, i + 1);
