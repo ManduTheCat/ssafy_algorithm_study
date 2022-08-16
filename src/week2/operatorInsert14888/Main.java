@@ -13,7 +13,7 @@ public class Main {
 	private static int[] sign;	/**연산자가 저장되는 배열*/
 	private static int max;	/**최대값*/
 	private static int min;	/**최소값*/
-	private static int N;	/**숫자개수*/
+	private static int N;	/**숫자 개수*/
 
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
