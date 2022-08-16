@@ -14,8 +14,8 @@ import java.util.StringTokenizer;
  */
 public class Main {
 	public static class Meeting {
-		int start;
-		int end;
+		int start;	/**시작시간*/
+		int end;	/**끝나는 시간*/
 
 		public Meeting(int start, int end) {
 			this.start = start;
