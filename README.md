@@ -20,4 +20,9 @@
 |  | 1주차 | 2주차 | 3주차 |
 | --- | --- | --- | --- |
 | 문제 1 | [소수구하기](https://www.acmicpc.net/problem/1929) 🥈| [연산자 끼워넣기](https://www.acmicpc.net/problem/14888) 🥈| [종이의 갯수](https://www.acmicpc.net/problem/1780)🥈 |
-| 문제 2 | [키로거](https://www.acmicpc.net/problem/5397) 🥈| [회의실 배정](https://www.acmicpc.net/problem/1931)🥈 | [로봇 시뮬레이션](https://www.acmicpc.net/problem/2174) 🥇|
+| 문제 2 | [키로거](https://www.acmicpc.net/problem/5397) 🥈| [회의실 배정](https://www.acmicpc.net/problem/1931)🥈 | [로봇 시뮬레이션](https://www.acmicpc.net/problem/2174) 🥇| 
+
+
+## 기록
+* 20220818 3주차 문제 추가, fork 적용 Pr 안내문 추가
+* 20220819 PR탬플릿추가, 로그항목추가
