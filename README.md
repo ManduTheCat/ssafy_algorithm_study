@@ -13,16 +13,18 @@
     * 그리디/분할정복/벡트레킹/그래프 문제 선정 및 리뷰
 * 22.08.24
     * 그래프/ 문자열 문제 선정 및 리뷰
+    * a형 시험 대비 문제 선정
 
 
 ## 주차별 문제 
 
-|  | 1주차 | 2주차 | 3주차 |
-| --- | --- | --- | --- |
-| 문제 1 | [소수구하기](https://www.acmicpc.net/problem/1929) 🥈| [연산자 끼워넣기](https://www.acmicpc.net/problem/14888) 🥈| [종이의 갯수](https://www.acmicpc.net/problem/1780)🥈 |
-| 문제 2 | [키로거](https://www.acmicpc.net/problem/5397) 🥈| [회의실 배정](https://www.acmicpc.net/problem/1931)🥈 | [로봇 시뮬레이션](https://www.acmicpc.net/problem/2174) 🥇| 
+|  | 1주차 | 2주차 | 3주차 | 4주차 |
+| --- | --- | --- | --- | ---|
+| 문제 1 | [소수구하기](https://www.acmicpc.net/problem/1929) 🥈| [연산자 끼워넣기](https://www.acmicpc.net/problem/14888) 🥈| [종이의 갯수](https://www.acmicpc.net/problem/1780) 🥈 |[파이프 옮기기](https://www.acmicpc.net/problem/17070) 🥇|
+| 문제 2 | [키로거](https://www.acmicpc.net/problem/5397) 🥈| [회의실 배정](https://www.acmicpc.net/problem/1931) 🥈 | [로봇 시뮬레이션](https://www.acmicpc.net/problem/2174) 🥇| [⚾](https://www.acmicpc.net/problem/17281) 🥇|
 
 
 ## 기록
 * 20220818 3주차 문제 추가, fork 적용 Pr 안내문 추가
 * 20220819 PR탬플릿추가, 로그항목추가
+* 20220824 4주차 문제 추가, 난이도 상향조정
