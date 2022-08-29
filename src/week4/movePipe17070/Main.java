@@ -48,8 +48,8 @@ public class Main{
 	}
 	static int num;
 	// 방향에 따라 탐색해야하는 부분이 다름 
-	/**@param int r 행(r)
-	 * @param int c 열(c)
+	/**@param int r 세로
+	 * @param int c 가로
 	 * @param int[][] map 파이프 배열 
 	 * @param int dir 가로 일때 : 1, 세로일 떄 : 2, 대각선일때 :3
 	 * */
