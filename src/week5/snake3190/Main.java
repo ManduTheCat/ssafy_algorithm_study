@@ -97,10 +97,11 @@ public class Main {
 		// 맵을 나가지않고, 자기자신을 만나지 않을 때(1이 아닐때 == 뱀이 아닐 때)까지 반복
 		while (isIn(dr, dc)) {			
 			// 머리를 다음칸에 넣고
-			map[dr][dc] = 1;
-			if (map[dr][dc] == 9) { //다음칸이 사과면 -> 꼬리는 그대로.				
+			if (map[dr][dc] == 9) { //다음칸이 사과면 -> 꼬리는 그대로.		
+				map[dr][dc] = 1;
 				snakeQueue.offerFirst(new Snake(dr, dc));
 			} else { //꼬리쪽(큐 끝부분 하나 삭제)
+				map[dr][dc] = 1;
 				Snake tempSnake = snakeQueue.pollLast();
 				map[tempSnake.r][tempSnake.c] = 0;
 
