@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
+
 public class Main {
     /**
      * N => NxN 크기
@@ -101,11 +102,6 @@ public class Main {
             return;
         }
 
-        //다음 이동할 좌표에 사과가 존재한다면 뱀의 몸의 길이는 늘어난다. (사과가 없어지고 꼬리는 움직이지않는다.)
-        if(map[nr][nc]==5) {
-            map[nr][nc]=snake_Direction; //이때 뱀이 어떤 방향이였는지를 저장함. (꼬리 이동시킬때 편하게 하려고)
-
-        }
 
         if(map[nr][nc]==0){ //사과가 없다면 뱀의 몸 길이는 늘어나지 않는다. (꼬리 이동)
             int tempR = tailR ; int tempC = tailC;
@@ -118,13 +114,15 @@ public class Main {
 
         }
 
+        //사과를 먹거나 먹지 않거나 뱀의 머리는 이동한다.
+
         //머리 좌표 갱신
         headR = nr;
         headC = nc;
         //그 좌표에 방향을 저장 
         map[nr][nc] = snake_Direction;
         totalTime++; //초 증가
-        // printMap(); (궁금하면 디버그찍어보세용)
+       //  printMap();
 
     }
 
