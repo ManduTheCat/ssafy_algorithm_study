@@ -38,11 +38,11 @@ public class Main {
 			
 //			System.out.println(Arrays.toString(logs));
 
-			int min = logs[0] - logs[N - 1];	// 초기값을 첫번째 통나무와 마지막 통나무의 차로 놓는다.
+			int max = logs[0] - logs[N - 1];	// 초기값을 첫번째 통나무와 마지막 통나무의 차로 놓는다.
 			
 			// 통나무를 순서대로 비교하면서 min을 바꿔준다.
 			for (int i = 0; i < N - 1; i++) {
-				min = Math.max(min, Math.abs(logs[i] - logs[i + 1]));
+				max = Math.max(max, Math.abs(logs[i] - logs[i + 1]));
 			}
 			
 			sb.append(min).append("\n");
