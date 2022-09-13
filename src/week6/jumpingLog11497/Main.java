@@ -1,91 +1,36 @@
 package week6.jumpingLog11497;
 
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.LinkedList;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.StringTokenizer;
 
 public class Main {
-
-    public static boolean isValid(int x, int y, int[][] board) {
-        return x >= 0 && x < board[0].length && y >= 0 && y < board.length;
-    }
-
-    private static void print(int[][] board) {
-        for(int[] b : board) {
-            System.out.println(Arrays.toString(b));
-        }
-        System.out.println();
-    }
-
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        int K = Integer.parseInt(br.readLine());
+        int T = Integer.parseInt(br.readLine());
+        for(int t = 0; t < T; ++t) {
 
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        int W = Integer.parseInt(st.nextToken()), H = Integer.parseInt(st.nextToken());
+            int N = Integer.parseInt(br.readLine());
+            ArrayList<Integer> log = new ArrayList<>();
 
-        int[][] board = new int[H][W];
-        for(int h = 0; h < H; ++h) {
-            st = new StringTokenizer(br.readLine());
-            for(int w = 0; w < W; ++w) {
-                board[h][w] = Integer.parseInt(st.nextToken()) * -1;
-            }
-        }
-
-        LinkedList<int[]> next = new LinkedList<>();
-        next.addFirst(new int[] {0, 0, 0});
-        // 사방 + 말
-        int[] dx = {1, -1, 0, 0}, dy = {0, 0, 1, -1};
-        int[] hdx = {-1, 1, -2, 2, -2, 2, -1, 1}, hdy = {-2, -2, -1, -1, 1, 1, 2, 2};
-        boolean[][][] visit = new boolean[board.length][board[0].length][K+1];
-
-        int count = 1;
-        visit[0][0][0] = true;
-        while(!next.isEmpty()) {
-
-//            next.forEach(a -> System.out.println(Arrays.toString(a)));
-
-            int size = next.size();
-            for(int s = 0; s < size; ++s) {
-                int[] p = next.pollFirst();
-
-                if(p[0] == board[0].length - 1 && p[1] == board.length - 1) {
-                    System.out.println(count - 1);
-                    return;
-                }
-
-                // 사방 탐색
-                for (int d = 0; d < dx.length; ++d) {
-                    int nx = p[0] + dx[d], ny = p[1] + dy[d], k = p[2];
-                    if (isValid(nx, ny, board) && board[ny][nx] != -1 && !visit[ny][nx][k]) {
-                        visit[ny][nx][k] = true;
-                        board[ny][nx] = count;
-                        next.addLast(new int[]{nx, ny, k});
-                    }
-                }
-
-                for(int d = 0; d < hdx.length; ++d) {
-                    int nx = p[0] + hdx[d], ny = p[1] + hdy[d], k = p[2] + 1;
-                    if (isValid(nx, ny, board) && board[ny][nx] != -1 && k <= K && !visit[ny][nx][k]) {
-                        visit[ny][nx][k] = true;
-                        board[ny][nx] = count;
-                        next.addLast(new int[]{nx, ny, k});
-                    }
-                }
+            StringTokenizer st = new StringTokenizer(br.readLine());
+            for(int n = 0; n < N; ++n){
+                log.add(Integer.parseInt(st.nextToken()));
             }
 
-//            System.out.println("=====================");
-//            print(board);
-            count++;
+            Collections.sort(log);
+
+            int result = 0;
+            for(int l = log.size() - 1; l >= 2; --l) {
+                result = Math.max(result, log.get(l) - log.get(l-2));
+            }
+
+            System.out.println(result);
+
+
         }
-//        print(board);
-
-        System.out.println(-1);
-
-
     }
 }
