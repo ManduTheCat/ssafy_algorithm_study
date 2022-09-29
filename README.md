@@ -14,7 +14,7 @@
 
 ## 스케줄
 * 22.08.03
-    * Array/Sting, Stack,Queue 문제 선정 및 리뷰
+    * Array/String, Stack,Queue 문제 선정 및 리뷰
     * 스터디 기반 구축 규칙설정
 * 22.08.10
     * LinkedList/Tree, 완전탐색, 그리디, 분할정복 문제 선정 및 리뷰
