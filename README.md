@@ -39,12 +39,16 @@
   * [yts 배 풀이](https://useful-lock-e73.notion.site/1092-fc0fd5cac8954763be226ffb39ca7aab)
   * 게임, 거짓말 , 괄호 추가 하기 문제 추가
   * 문제 풀이 PR 100 개 돌파!!
-* 22.10.01 2차 4주차 문제선정(week7)
+* 22.10.01 3차 1주차 문제선정(week7)
   * 3차 스터디 시작
   * 3차 1주차 문제 선정 
   * 리프레쉬를 위해 새로운 스터디장 선정
   * a 형 미취득자를 위해 주동안 집중 관리 
   * a 형 미취득자를 위해 문제 백준 + swea 두문제로 로 수정 
+* 22.10.06 3차 2주차 문제선정(week9)
+  * 3차 2주차 시작
+  * 스터디 디크코드 개설
+  * git 조직 구성
 
 ## 주차별 문제 
 ### 1차
@@ -60,11 +64,12 @@
 | 문제 2 | [배](https://www.acmicpc.net/problem/1092) 🥇| [통나무 건너뛰기](https://www.acmicpc.net/problem/11497)🥈 | [거짓말](https://www.acmicpc.net/problem/1043)   🥇  | |     |
  | 문제 3 |[⚾](https://www.acmicpc.net/problem/17281)🥇|                                                | [괄호추가하기](https://www.acmicpc.net/problem/16637) 🥇||
 ### 3차
-|      | 1주차 | 2주차                                               | 3주차                                             | |  |
-|------|-----|---------------------------------------------------|-------------------------------------------------|--------------------------------------------|-----|
-| 문제 1 | [램프](https://www.acmicpc.net/problem/1034)   🥇 |  |    |  |
-| 문제 2 |  [보물상자 비밀번호](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRUN9KfZ8DFAUo)   |  |   | |     |
-| 문제 3 ||     | ||
+|      | 1주차                                                                                                                                                                                                                                                                | 2주차                                          | 3주차                                             | |  |
+|------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|-------------------------------------------------|--------------------------------------------|-----|
+| 문제 1 | [램프](https://www.acmicpc.net/problem/1034)   🥇                                                                                                                                                                                                                    | [구슬찾기](https://www.acmicpc.net/problem/2617) 🥇|    |  |
+| 문제 2 | [보물상자 비밀번호](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRUN9KfZ8DFAUo)                                                                                                                                                         | [개미굴](https://www.acmicpc.net/problem/14725)  🥇                                    |   | |     |
+| 문제 3 |                                                                                                                                                                                                                                                                    | [등산로 조성](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PoOKKAPIDFAUq&categoryId=AV5PoOKKAPIDFAUq&categoryType=CODE&problemTitle=%EB%93%B1%EC%82%B0%EB%A1%9C&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=&pageSize=10&pageIndex=1) |                                              ||
+| 문제 4 || |                                               [줄기세포](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRJ8EKe48DFAUo&categoryId=AWXRJ8EKe48DFAUo&categoryType=CODE&problemTitle=%EC%A4%84%EA%B8%B0&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=&pageSize=10&pageIndex=1)|||
 ## 기록
 * 20220818 3주차 문제 추가, fork 적용 Pr 안내문 추가
 * 20220819 PR탬플릿추가, 로그항목추가
@@ -72,4 +77,5 @@
 * 20220831 1차 스터디 종료, 2 차 1주차 문제 선정 (week5)문제 갯수 주당 3개로 증가 결정, 추가인원 🎉, 결과보고서제출
 * 20220910 2차 2주차 기록(week6) 추가 , 참여자 README.md 기록
 * 20220914 2차 3주차 기록(week7) 추가 , 내부 모각코 시범운행 , 발표 인원이 많아 21:00 시작 프로그래머스 문제 제안 
-* 20221002 3주차 시작 시작 스터디장 교체 [yeojinj](https://github.com/yeojinj) 10월 13일 까지 문제수 2문제로 줄이고 A 형 대비를 위한 문제 추가 
+* 20221002 3차 시작 시작 스터디장 교체 [yeojinj](https://github.com/yeojinj) 10월 13일 까지 문제수 2문제로 줄이고 A 형 대비를 위한 문제 추가 
+* 20221006 3차 2주차 시작 스터디원 두명 탈퇴
