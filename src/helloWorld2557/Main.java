@@ -10,19 +10,7 @@ import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        System.setIn(new FileInputStream("input.txt"));
-        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-        int n  = Integer.parseInt(bf.readLine());
-        for(int i =0 ; i < n; i++){
-            Stack <String> commandStack = new Stack<String>();
-            StringBuffer sb = new StringBuffer(bf.readLine());
-            String reverseInput = sb.reverse().toString();
-            Arrays.stream(reverseInput.split("")).forEach(commandStack::push);
-
-            actionEdit(commandStack);
-
-        }
-
+        System.out.println("Hello rlaaudwwls");
 
     }
     public static void actionEdit(Stack<String> stack){
